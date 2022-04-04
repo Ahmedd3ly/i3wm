@@ -1,0 +1,70 @@
+#Alacritty:
+env:
+  TERM: alacritty
+
+window:
+  dimensions:
+    columns: 84
+    lines: 24
+
+  padding:
+    x: 25
+    y: 25
+
+   #dynamic_padding:  true
+    decoration: none
+
+font:
+  normal:
+    family: "MesloLGS NF"
+    
+  size: 10
+
+  ## Background opacity
+  opacity: 1.0
+
+colors:
+  # Default colors
+  primary:  
+    background: '0x221e2b'         #kitty: #181c30
+    foreground: '0x3891ef'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text:   '0x212121'
+    cursor: '0xeeffff'
+
+  normal:
+    black:   '0x212121'
+    red:     '0xf07178'
+    green:   '0xc3e88d'
+    yellow:  '0xffcb6b'
+    blue:    '0x82aaff'
+    magenta: '0xc792ea'
+    cyan:    '0x11328c'
+    white:   '0xeeffff'
+
+  bright:
+    black:   '0x4a4a4a'
+    red:     '0xf07178'
+    green:   '0xc3e88d'
+    yellow:  '0xffcb6b'
+    blue:    '0x82aaff'
+    magenta: '0xc792ea'
+    cyan:    '0x11328c'
+    white:   '0xffffff'
+    
+# cursor:
+#   style: Underline
+
+#   unfocused_hollow: false
+
+live_config_reload: true
+                 
+key_bindings:
+
+  - { key: Key0, mods: Control, action: ResetFontSize }
+
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
